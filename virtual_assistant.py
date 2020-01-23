@@ -130,7 +130,7 @@ def assistant(command):
 
         elif 'current weather' in command:
             location = loc.locate()
-            apikey=''
+            apikey='YOUR-API-KEY'
             lat = location[0]
             lng = location[1]
             response = ForecastIO.ForecastIO(apikey, units=ForecastIO.ForecastIO.UNITS_SI, lang=ForecastIO.ForecastIO.LANG_ENGLISH, latitude=lat, longitude=lng)
